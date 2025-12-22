@@ -1,4 +1,6 @@
 # Byte-compiled / optimized / DLL files
+
+
 __pycache__/
 *.py[codz]
 *$py.class
@@ -32,6 +34,13 @@ MANIFEST
 *.manifest
 *.spec
 
+# Generated figures (keep selected final figures only)
+figures/tmp/
+figures/debug/
+
+
+
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
@@ -62,6 +71,15 @@ db.sqlite3
 db.sqlite3-journal
 
 # Flask stuff:
+# Data (DO NOT COMMIT)
+data/raw/
+data/processed/*.csv
+notebooks/data/processed/*.csv
+
+# Binaries
+*.exe
+
+
 instance/
 .webassets-cache
 
