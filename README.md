@@ -46,6 +46,44 @@ Rather than deep genomic sequence modeling, this project focuses on **clinically
 - Observed higher median mutation burden among deceased patients
 
 ---
+## 📊 Key Results & Visualizations
+
+The following figures summarize the **main clinical insights** and **model performance**
+from the TCGA Lung Adenocarcinoma clinicogenomic mortality analysis.
+
+---
+
+### 1️⃣ Observed Mortality Patterns (Exploratory Analysis)
+
+Observed mortality proportions stratified by:
+- Tumor stage  
+- Age group  
+- Mutation burden quartiles  
+
+This figure presents **raw, observed risk** without modeling assumptions.
+
+![Observed Mortality Panel](figures/mortality_panel.png)
+
+---
+
+### 2️⃣ Adjusted Effects from Logistic Regression (Odds Ratios)
+
+Forest plot of **adjusted odds ratios** from the multivariable logistic regression model.
+Values greater than 1 indicate increased odds of death.
+
+![Odds Ratio Forest Plot](notebooks/figures/odds_ratio_panel.png)
+
+---
+
+### 3️⃣ Model Discrimination Performance (ROC Curve)
+
+ROC curve evaluating mortality prediction performance on held-out test data.
+
+- ROC-AUC ≈ 0.8  
+- Indicates good discrimination for a small biomedical dataset  
+
+![ROC Curve](notebooks/figures/roc_curve.png)
+
 
 ### 3. Logistic Regression (Primary Model)
 - Stratified train/test split
