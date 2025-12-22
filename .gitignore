@@ -38,6 +38,14 @@ MANIFEST
 figures/tmp/
 figures/debug/
 
+# Local / unused files
+app.py
+main.py
+template.py
+setup.py
+templates/
+config/
+data/features/
 
 
 
