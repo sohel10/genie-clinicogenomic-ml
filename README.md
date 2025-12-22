@@ -1,22 +1,19 @@
 # genie-clinicogenomic-ml# TCGA Lung Adenocarcinoma Mortality Modeling  
 **Clinicogenomic Risk Analysis with Interpretable Machine Learning**
-
-## Overview
-This project demonstrates an end-to-end clinicogenomic analysis using publicly available **TCGA lung adenocarcinoma (LUAD)** data.  
-The goal is to model **mortality risk** using interpretable clinical and genomic summary features, while maintaining transparency appropriate for healthcare and biomedical decision-support settings.
-
-Rather than deep genomic sequence modeling, this project focuses on **clinically interpretable predictors**, aligning with how real-world healthcare ML systems are evaluated.
-
 ---
-
-
 ### 2️⃣ Adjusted Clinical Risk (Logistic Regression Odds Ratios)
 
 Forest plot of adjusted odds ratios from the multivariable logistic regression model.
 Values > 1 indicate higher odds of mortality.
 
 ![Odds Ratio Forest Plot](notebooks/figures/odds_ratio_panel.png)
+---
 
+## Overview
+This project demonstrates an end-to-end clinicogenomic analysis using publicly available **TCGA lung adenocarcinoma (LUAD)** data.  
+The goal is to model **mortality risk** using interpretable clinical and genomic summary features, while maintaining transparency appropriate for healthcare and biomedical decision-support settings.
+
+Rather than deep genomic sequence modeling, this project focuses on **clinically interpretable predictors**, aligning with how real-world healthcare ML systems are evaluated.
 ---
 ## Data
 - Source: **TCGA LUAD (The Cancer Genome Atlas)**
