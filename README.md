@@ -9,6 +9,15 @@ Rather than deep genomic sequence modeling, this project focuses on **clinically
 
 ---
 
+
+### 2️⃣ Adjusted Clinical Risk (Logistic Regression Odds Ratios)
+
+Forest plot of adjusted odds ratios from the multivariable logistic regression model.
+Values > 1 indicate higher odds of mortality.
+
+![Odds Ratio Forest Plot](notebooks/figures/odds_ratio_panel.png)
+
+---
 ## Data
 - Source: **TCGA LUAD (The Cancer Genome Atlas)**
 - Sample size: ~230 patients (open-access cohort)
@@ -58,15 +67,6 @@ clinicogenomic mortality analysis.
 Observed mortality proportions stratified by tumor stage, age group, and mutation burden.
 
 ![Observed Mortality Panel](figures/mortality_panel.png)
-
----
-
-### 2️⃣ Adjusted Clinical Risk (Logistic Regression Odds Ratios)
-
-Forest plot of adjusted odds ratios from the multivariable logistic regression model.
-Values > 1 indicate higher odds of mortality.
-
-![Odds Ratio Forest Plot](notebooks/figures/odds_ratio_panel.png)
 
 
 ---
