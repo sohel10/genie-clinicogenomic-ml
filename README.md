@@ -68,16 +68,6 @@ Values > 1 indicate higher odds of mortality.
 
 ![Odds Ratio Forest Plot](notebooks/figures/odds_ratio_panel.png)
 
----
-
-### 3️⃣ Model Performance (ROC Curve)
-
-Receiver Operating Characteristic (ROC) curve evaluating mortality prediction.
-
-ROC-AUC ≈ 0.8, indicating good discrimination for a small biomedical dataset.
-
-![ROC Curve](notebooks/figures/roc_curve.png)
-
 
 ---
 
