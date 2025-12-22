@@ -1,12 +1,6 @@
 # genie-clinicogenomic-ml# TCGA Lung Adenocarcinoma Mortality Modeling  
 **Clinicogenomic Risk Analysis with Interpretable Machine Learning**
----
-### 2️⃣ Adjusted Clinical Risk (Logistic Regression Odds Ratios)
 
-Forest plot of adjusted odds ratios from the multivariable logistic regression model.
-Values > 1 indicate higher odds of mortality.
-
-![Odds Ratio Forest Plot](notebooks/figures/odds_ratio_panel.png)
 ---
 
 ## Overview
@@ -65,6 +59,15 @@ Observed mortality proportions stratified by tumor stage, age group, and mutatio
 
 ![Observed Mortality Panel](figures/mortality_panel.png)
 
+
+---
+
+### 2️⃣ Adjusted Clinical Risk (Logistic Regression Odds Ratios)
+
+Forest plot of adjusted odds ratios from the multivariable logistic regression model.
+Values > 1 indicate higher odds of mortality.
+
+![Odds Ratio Forest Plot](notebooks/figures/odds_ratio_panel.png)
 
 ---
 
