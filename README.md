@@ -92,6 +92,31 @@ This illustrates:
 
 ---
 
+## Project Structure
+
+```
+genie-clinicogenomic-ml/
+├── README.md
+├── requirements.txt
+├── figures/
+│   └── mortality_panel.png
+├── notebooks/
+│   ├── EDA.ipynb
+│   ├── clinical_risk.ipynb
+│   ├── forest_plots.ipynb
+│   └── figures/
+│       ├── roc_curve.png
+│       └── odds_ratio_panel.png
+├── src/
+│   └── genie_clinicogenomic_ml/
+│       ├── preprocess.py
+│       ├── feature_engineering.py
+│       └── models/
+│           ├── train_model.py
+│           └── evaluate.py
+
+```
+
 ## Limitations
 - No true survival time available in open-access TCGA clinical tables
 - Small sample size limits complex modeling
