@@ -12,9 +12,39 @@ Rather than deep genomic sequence modeling, this project focuses on **clinically
 ## Data
 - Source: **TCGA LUAD (The Cancer Genome Atlas)**
 - Sample size: ~230 patients (open-access cohort)
-- Outcome:
-  - `event = 1`: Deceased  
-  - `event = 0`: Living  
+## Prediction Output Design
+
+Although the underlying model is trained using a binary outcome
+(0 = living, 1 = deceased), the application does **not** expose
+binary class predictions to end users.
+
+### Rationale
+
+In clinical decision-support systems, directly predicting or displaying
+binary outcomes such as “death” or “survival” is inappropriate and
+potentially misleading. Instead, clinical tools standardly present
+**probability-based risk estimates**, which support nuanced decision-making
+and align with ethical and usability best practices.
+
+### Implementation
+
+- The model outputs calibrated mortality probabilities using `predict_proba`
+- The user interface displays:
+  - Estimated mortality risk (%)
+  - Risk category (Low / Moderate / High)
+- Binary class labels are intentionally hidden from the UI
+
+### Calibration
+
+Model probabilities are calibrated and evaluated on held-out data to ensure
+that predicted risk levels correspond to observed outcome frequencies.
+This supports interpretability and clinical relevance.
+
+### Disclaimer
+
+This application is intended for research and demonstration purposes only
+and does not constitute medical advice or clinical decision-making.
+
 - Predictors include:
   - Age at diagnosis  
   - Tumor stage (T, N, overall stage)  
